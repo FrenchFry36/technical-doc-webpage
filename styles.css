@@ -1,0 +1,206 @@
+body {
+    color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    min-width: 290px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 290;
+    width: 300;
+    border-right: 1px solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    height: 100%;
+    background-color: #ffffff;
+    display: block;
+    padding: 0;
+}
+
+#navbar header {
+    text-align: center;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#navbar ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1rem;
+    position: relative;
+    border-top: 1px solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    padding-top: 10px;
+}
+
+#navbar a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+header {
+    color: black;
+    font-weight: thin;
+    font-size: 1.8em;
+}
+
+#main-doc header {
+    margin-left: 25px;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 280px;
+    margin-bottom: 110px;
+}
+
+#main-doc li {
+    margin: 15px 0 0 -20px;
+}
+
+section article {
+    margin: 25px;
+}
+
+code {
+    background-color: #efefef;
+    font-size: larger;
+}
+
+.canvas-type {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+#resource-ref {
+    color: #477ca7;
+}
+
+#resource-ref:visited {
+    color: #74638f;
+}
+
+table {
+    width: 700px;
+    border: 1px solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    margin-top: 30px;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #efefef;
+}
+
+img {
+    margin-top: 20px;
+    width: 700px;
+}
+
+#html-structure-v-box {
+    max-width: 690px;
+    border: 1px solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    margin-top: 30px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.v-box {
+    background-color: #efefef;
+    border: 1px solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    margin: 20px;
+    padding: 5px;
+}
+
+.white, .white-code {
+    background-color: white;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 174px;
+    }
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        padding-right: 10;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+    #navbar li {
+        margin-top: 0;
+    }
+    #main-doc {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    .regulation {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+}
+
+@media (max-width: 1060px) {
+    table {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+}
